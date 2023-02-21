@@ -1,0 +1,114 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:0 1em;
+    background-color: rgb(10,10,10);
+    color: rgb(240,240,240);
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;    
+}
+
+img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#logo{
+    position:relative;
+    max-width:1000px;
+    
+    
+    
+}
+
+.container {
+    display:block;
+   
+        
+  }
+  #image-container{
+      border-radius: 500px;
+      overflow: hidden;
+      max-width:500px;
+      margin: auto;
+       
+  }
+  
+
+@media (min-width:1000px) {
+    .bio{
+    margin-left:550px;
+    position:relative;
+    display:block;
+    top:-400px
+    }
+    .container {
+        max-width: 1000px;
+        max-height: 500px;
+        position:relative;
+        display:block;
+             
+      }
+      #image-container{
+          margin: 30px;
+          max-width: 500px;
+          max-height: 500px;
+          border-radius: 500px;
+          overflow: hidden;
+      }
+    
+}
+
+.container2 {
+    display:block;
+    
+        
+  }
+  #image-container2{
+      border-radius:500px;
+      overflow: hidden;
+      max-width:500px;
+      margin: auto;
+       
+  }
+  
+
+@media (min-width:1000px) {
+    .bio2{
+    margin-right:550px;
+    position:relative;
+    display:block;
+    top:-400px
+    }
+    .container2 {
+        max-width: 1000px;
+        max-height: 500px;
+        position:relative;
+        display:block;
+             
+      }
+      #image-container2{
+          margin: 30px;
+          max-width: 500px;
+          max-height: 500px;
+          border-radius: 500px;
+          overflow: hidden;
+          margin-left: 500px;
+      }
+    
+}
+
+#image-container2:hover{
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.1);
+}
+#image-container:hover{
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
