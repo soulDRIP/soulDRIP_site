@@ -125,19 +125,65 @@ a{
     margin: 5px;
 }
 
-#aboutme{
-    display:block;
-    padding: 10px;
+#aboutme ,#contact-button {
+    display:inline-flex;
+    padding: 15px;
+    justify-content: space-evenly;
     font-weight: bold;
     background-color: rgba(0, 179, 255, 0.5);
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-bottom:10px;
+    border-radius: 25px;
+    margin: 10px ;
+    font-family: 'Comfortaa', cursive;
+    color:white;
+    font-size: 16px;
+    
 }
 
-#aboutme:hover{
+
+#aboutme:hover, #contact-button:hover{
     transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
     transform:scale(1.2)
 }
 
 
+.contact,.contact-container {
+  position: fixed;
+  z-index: 10;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 4rem 2rem 4rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 1.5rem;
+  transition:800ms top ease-in 100ms,
+             800ms opacity  100ms;
+}
+.contact:hover .contact-container {
+    top: 0;
+    opacity: 1;
+  }
+  
+  .contact-container  {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.1;
+    color: #66a1ff;
+  }
+  
+  .contact-container {
+    display: block;
+    line-height: 2.5;
+    color: #9b9b9b;
+  }
+  
+  .contact-container {
+    list-style: inside decimal;
+    line-height: 1.7;
+    color: #4a4a4a;
+  }
+  
