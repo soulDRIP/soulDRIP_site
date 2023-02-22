@@ -146,15 +146,13 @@ a {
 }
 
 
-#dropmenu-contents {
-  
-    height: 0;
-    transition: height 0.5s ease-in-out;
-    height: 200px;
-
+.contact-contents {
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
 }
 
-.contact-contents {
-    display: none;
-   
+.contact-contents.active {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
 }
