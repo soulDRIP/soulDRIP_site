@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(10,10,10);
-    color: rgb(240,240,240);
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 240, 240);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -17,20 +17,20 @@ header {
     justify-content: flex-end;
     padding: 12px;
     margin-top: 15px;
-    
+
 }
 
 .share-button {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(240,240,240);
+    background-color: rgb(240, 240, 240);
 }
 
 .share-button svg {
     margin-left: 12px;
     margin-top: 10px;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
 }
 
 .container {
@@ -47,21 +47,16 @@ h1 {
     margin-bottom: 0px;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(240,240,240);
-}
-
 .tile {
-    
+
     width: 60%;
-    background-color: rgb(37,37,37);
+    background-color: rgb(37, 37, 37);
     margin: 7px;
     border-radius: 17px;
     display: flex;
     justify-content: space-between;
-    
-    
+
+
 }
 
 .tile:hover {
@@ -74,21 +69,23 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(52,52,52);
+    background-color: rgb(52, 52, 52);
 }
 
 .tile-share-button svg {
     margin-left: 1px;
     margin-top: 12px;
 }
+
 .tile-share-button:hover {
     transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
-    transform:scale(1.2);
-    background-color:rgb(185, 185, 185);
+    transform: scale(1.2);
+    background-color: rgb(185, 185, 185);
 }
-.tile-share-button svg:hover{
-    color:black;
-    transform:scale(1.2);
+
+.tile-share-button svg:hover {
+    color: black;
+    transform: scale(1.2);
 }
 
 
@@ -109,81 +106,55 @@ a {
     height: 44px;
 }
 
-a{
-        vertical-align: central;
-        align-items: center;
-        text-decoration: none;
-        font: menu;
-        font-size: large;
-        display: inline-block;
-        text-align: center;
-        line-height: 28px;
+a {
+    vertical-align: central;
+    align-items: center;
+    text-decoration: none;
+    font: menu;
+    font-size: large;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
 }
 
-.cover{
+.cover {
     border-radius: 10px;
     margin: 5px;
 }
 
-#aboutme ,#contact-button {
-    display:inline-flex;
+#aboutme,
+#dropdown-button {
     padding: 15px;
-    justify-content: space-evenly;
-    font-weight: bold;
     background-color: rgba(0, 179, 255, 0.5);
     border-radius: 25px;
-    margin: 10px ;
+    margin: 10px;
     font-family: 'Comfortaa', cursive;
-    color:white;
+    color: white;
     font-size: 16px;
-    
+
+
 }
 
 
-#aboutme:hover, #contact-button:hover{
+#aboutme:hover,
+#dropdown-button:hover {
     transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
-    transform:scale(1.2)
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 
-.contact,.contact-container {
-  position: fixed;
-  z-index: 10;
-  top: -100%;
-  left: 0;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0.5rem 4rem 2rem 4rem;
-  background-color: #ffffff;
-  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  font-family: "Proza Libre", sans-serif;
-  font-size: 1.5rem;
-  transition:800ms top ease-in 100ms,
-             800ms opacity  100ms;
+#dropmenu-contents {
+  
+    height: 0;
+    transition: height 0.5s ease-in-out;
+    height: 200px;
+
 }
-.contact:hover .contact-container {
-    top: 0;
-    opacity: 1;
-  }
-  
-  .contact-container  {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 2.1;
-    color: #66a1ff;
-  }
-  
-  .contact-container {
-    display: block;
-    line-height: 2.5;
-    color: #9b9b9b;
-  }
-  
-  .contact-container {
-    list-style: inside decimal;
-    line-height: 1.7;
-    color: #4a4a4a;
-  }
-  
+
+.contact-contents {
+    display: none;
+   
+}
